@@ -1,0 +1,21 @@
+
+    <h1>新活動</h1>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="活動名稱"
+        name="title" ngModel required #first="ngModel">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="活動說明"
+        name="des" ngModel required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="截止日" 
+        name="closetime" ngModel required >
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="人數限制" 
+        name="nlimit" ngModel required >
+      </mat-form-field>
+      <button mat-button>Submit</button>
+    </form>

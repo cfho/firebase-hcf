@@ -1,0 +1,41 @@
+<!-- <ng-container *ngIf="afAuth.authState | async as authUser; else loginTemplate">
+    <h1>{{ authUser.providerData[0].email }}</h1>
+    <h1>{{ authUser.displayName }}</h1>
+    <pre>{{ authUser | json }}</pre>
+    <button (click)="logout()">logout</button>
+</ng-container> -->
+
+
+<mat-toolbar color="primary">
+  <!-- <mat-toolbar-row>
+    <span>Custom Toolbar</span>
+  </mat-toolbar-row> -->
+
+  <mat-toolbar-row>
+    <a *ngIf="isAuth"  (click)="onLogout()">登出</a>
+    <a *ngIf="!isAuth"  (click)="onLogin()">登入</a>
+    <!-- <span class="example-spacer"></span> -->
+
+    <a *ngIf="isAuth"  (click)="edituser()">修改資料</a>
+    <a *ngIf="isAuth"  (click)="activity_items()">出坡項目</a>
+    <!-- <div mat-card-avatar   class="example-header-image"></div> -->
+    
+
+    <!-- <mat-icon class="example-icon" *ngIf="isAuth" (click)="activity_items()">view_agenda</mat-icon> -->
+    <!-- <mat-icon class="example-icon" *ngIf="isAuth" (click)="users()">assignment_ind</mat-icon> -->
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+
+
+<!-- <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav role="navigation" mode="over">
+        <app-sidenav-list (closeSidenav)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+        <main>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container> -->

@@ -1,0 +1,22 @@
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+mat-sidenav {
+    background-color: lightyellow;
+}
+
+mat-sidenav {
+    width: 100px;
+}
+
+a {
+    display: block;
+}
+
+mat-icon {
+    font-size: 48px;
+}

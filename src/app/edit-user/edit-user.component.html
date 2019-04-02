@@ -1,0 +1,37 @@
+<mat-card class="example-card">
+  <h2>{{title}}</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>姓名</mat-label>
+      <input matInput placeholder="姓名" name="name" [ngModel]='item.name' required #first="ngModel">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>班別</mat-label>
+
+      <mat-select [(ngModel)]="item.class" name="class">
+          <mat-option *ngFor="let class of classes" [value]="class">
+            {{class}}
+          </mat-option>
+        </mat-select>
+
+      <!-- <input matInput placeholder="班別" name="class" [ngModel]='item.class' required> -->
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>組別</mat-label>
+      <input matInput placeholder="組別" name="group" [ngModel]='item.group' required>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>身分證字號</mat-label>
+      <input matInput placeholder="身分證字號" name="user_ID" [ngModel]='item.user_ID' required>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>手機</mat-label>
+      <input matInput placeholder="手機" name="mobile" [ngModel]='item.mobile' required>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>住址</mat-label>
+      <input matInput placeholder="住址" name="address" [ngModel]='item.address' required>
+    </mat-form-field>
+    <button mat-raised-button color="primary">確認</button>
+  </form>
+</mat-card>

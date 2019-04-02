@@ -1,0 +1,35 @@
+<h1>活動編輯</h1>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate="novalidate">
+    <mat-form-field class="example-full-width">
+        <input
+            matInput="matInput"
+            placeholder="活動名稱"
+            name="activity_title"
+            [ngModel]="item.activity_title"
+            required="required"
+            #first="ngModel"></mat-form-field>
+        <mat-form-field class="example-full-width">
+            <textarea
+                matInput="matInput"
+                placeholder="活動說明"
+                name="activity_des"
+                [ngModel]="item.activity_des"
+                required="required"></textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input
+                matInput="matInput"
+                placeholder="截止日"
+                name="activity_closetime"
+                [ngModel]="item.activity_closetime"
+                required="required"></mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input
+                    matInput="matInput"
+                    placeholder="人數限制"
+                    name="number_limit"
+                    [ngModel]="item.number_limit"
+                    required="required"></mat-form-field>
+                <button mat-button="mat-button">Submit</button>
+
+            </form>

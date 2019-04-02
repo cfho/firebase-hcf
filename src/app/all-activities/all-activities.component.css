@@ -1,0 +1,59 @@
+a:hover,
+a:active,
+button:hover,
+button:actives {
+  color: lightgray;
+}
+
+.enroll {
+  color: red;
+}
+
+.example-card, h2{
+  max-width: 100%;
+  padding: 16px;
+  margin: 32px;
+}
+
+.example-header-image {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/hcf-test.appspot.com/o/%E4%BD%9B%E5%AD%B8%E7%8F%AD%E5%9C%96%E6%AA%94.jpg?alt=media&token=8ea60b83-7a29-445a-9d0e-ffec021f587e');
+  background-size: cover;
+}
+
+.selected {
+  background-color: #CFD8DC !important;
+  color: primary;
+}
+
+.title {
+  align-self: center;
+}
+
+/* .example-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+} */
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 10px;
+}
+
+
+mat-card-title {
+  display: inline-block;
+  margin: 8px;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-around;
+}
+

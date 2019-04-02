@@ -1,0 +1,49 @@
+mat-toolbar-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.example-header-image {
+  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/hcf-test.appspot.com/o/%E4%BD%9B%E5%AD%B8%E7%8F%AD%E5%9C%96%E6%AA%94.jpg?alt=media&token=8ea60b83-7a29-445a-9d0e-ffec021f587e'); */
+  background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+
+  mat-icon {
+    cursor: pointer;
+  }
+  
+  .navigation-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  mat-toolbar-row {
+    /* cursor: pointer */
+  }
+  .nav-caption {
+    display: inline-block;
+    padding-left: 6px;
+  }
+  
+
+  .example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  
+
+  

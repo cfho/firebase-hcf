@@ -1,0 +1,66 @@
+<!-- <mat-toolbar color="primary">
+    <div fxHide.gt-xs="fxHide.gt-xs">
+        <button mat-icon-button="mat-icon-button" (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <a routerLink="/">LOGO</a>
+    </div>
+    <div
+        fxFlex="fxFlex"
+        fxLayout="fxLayout"
+        fxLayoutAlign="end"
+        fxHide.xs="fxHide.xs">
+        <button *ngIf="isAuth" mat-icon-button="mat-icon-button" (click)="allactivities()">
+            <mat-icon>album</mat-icon>
+        </button>
+
+        <button *ngIf="isAuth" mat-icon-button="mat-icon-button" (click)="newUser()">
+            <mat-icon>add_circle</mat-icon>
+        </button>
+
+        <button *ngIf="isAuth" mat-icon-button="mat-icon-button" (click)="newActivity()">
+            <mat-icon>plus_one</mat-icon>
+        </button>
+
+    </div>
+</mat-toolbar> -->
+
+<mat-sidenav-container class="example-container">
+        <mat-sidenav #sidenav role="navigation" mode="over">
+            <app-sidenav-list (closeSidenav)="sidenav.close()"></app-sidenav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            
+                <mat-toolbar color="primary">
+                        <div fxHide.gt-xs="fxHide.gt-xs">
+                            <button mat-icon-button="mat-icon-button" (click)="onToggleSidenav()">
+                                <mat-icon>menu</mat-icon>
+                            </button>
+                        </div>
+                        <div>
+                            <a routerLink="/">LOGO</a>
+                        </div>
+                        <div
+                            fxFlex="fxFlex"
+                            fxLayout="fxLayout"
+                            fxLayoutAlign="end"
+                            fxHide.xs="fxHide.xs">
+                            <button *ngIf="isAuth" mat-icon-button="mat-icon-button" (click)="allactivities()">
+                                <mat-icon>album</mat-icon>
+                            </button>
+                    
+                            <button *ngIf="isAuth" mat-icon-button="mat-icon-button" (click)="newUser()">
+                                <mat-icon>add_circle</mat-icon>
+                            </button>
+                    
+                            <button *ngIf="isAuth" mat-icon-button="mat-icon-button" (click)="newActivity()">
+                                <mat-icon>plus_one</mat-icon>
+                            </button>
+                    
+                        </div>
+                    </mat-toolbar>
+
+        </mat-sidenav-content>
+    </mat-sidenav-container>

@@ -1,0 +1,47 @@
+
+    
+<mat-card>
+  <h2>請確認基本資料</h2>
+  
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>姓名</mat-label>
+      <input matInput placeholder="姓名" [disabled]='!disabled' name="name" [ngModel]="item.name" required
+        #first="ngModel">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>班別</mat-label>
+      <input matInput placeholder="班別" [disabled]='!disabled' name="class" [ngModel]="item.class">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>組別</mat-label>
+      <input matInput placeholder="組別" [disabled]='!disabled' name="group" [ngModel]="item.group">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width" *ngIf="isvisible">
+        <mat-label>手機</mat-label>
+      <input matInput placeholder="手機" [disabled]='!disabled' name="mobile" [ngModel]="item.mobile">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width" *ngIf="isvisible">
+        <mat-label>身分證字號</mat-label>
+      <input matInput placeholder="身分證字號" [disabled]='!disabled' name="user_ID" [ngModel]="item.user_ID">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width" *ngIf="isvisible">
+        <mat-label>地址</mat-label>
+      <input matInput placeholder="地址" [disabled]='!disabled' name="address" [ngModel]="item.address">
+    </mat-form-field>
+
+    <ng-container class="function">
+      <button mat-raised-button color="primary" type='submit'>確認報名</button>
+    <!-- <mat-checkbox class="example-margin" [(ngModel)]="isvisible">Checked</mat-checkbox> -->
+    </ng-container>
+  </form>
+  <!-- <div class="function">
+      <mat-slide-toggle *ngIf="!isenroll" [(ngModel)]="disabled">修改資料</mat-slide-toggle>
+      <mat-checkbox class="example-margin" [(ngModel)]="isvisible">Checked</mat-checkbox>
+    </div> -->
+</mat-card>
+
+
+
+
+

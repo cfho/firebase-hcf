@@ -1,0 +1,22 @@
+
+    
+<mat-card class="example-card">
+  <h2>請確認基本資料，有錯誤請修改</h2>
+  <p>姓名：{{item.name}}</p>
+  <p>班級：{{item.class}}</p>
+  <p>組別：{{item.group}}</p>
+  <p *ngIf="isvisible">手機：{{item.mobile}}</p>
+  <p *ngIf="isvisible">身分證字號：{{item.user_ID}}</p>
+  <p *ngIf="isvisible">地址：{{item.address}}</p>
+
+
+    <ng-container class="function">
+      <button mat-raised-button color="primary" (click)="enroll()">確認報名</button>
+      <!-- <mat-checkbox class="example-margin" [(ngModel)]="isvisible">Checked</mat-checkbox> -->
+    </ng-container>
+</mat-card>
+
+
+
+
+
